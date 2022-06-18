@@ -1,16 +1,23 @@
-import React from 'react'
+import React, {useContext, useEffect} from 'react'
 import "./AnimatedBackground.css"
 import SignIn from "../components/SignIn/SignIn";
 import Chat from "../components/Chat/Chat";
+import UserContext from "../components/Context/UserContext";
 
 const AnimatedBackground = () => {
+
+    useEffect(()=>{
+        console.log(user)
+    })
+
+    const {user} = useContext(UserContext)
+
     return (
         <>
             <div className="header">
 
                 <div className="inner-header flex">
-                    <SignIn/>
-                    {/*<Chat/>*/}
+                    {user ? <Chat/> : <SignIn/>}
                 </div>
 
                 <div>
