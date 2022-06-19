@@ -23,10 +23,12 @@ const SignIn = () => {
             const name=response.user.displayName
             const email=response.user.email
             const profPic=response.user.photoURL
+            const uid=response.user.uid
 
             localStorage.setItem("name",name)
             localStorage.setItem("email",email)
             localStorage.setItem("profilePic",profPic)
+            localStorage.setItem("uid",uid)
         }).catch((err)=>{
             console.log(err)
         })

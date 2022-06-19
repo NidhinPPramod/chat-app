@@ -1,22 +1,19 @@
 
 .receive-msg {
-    width: 18rem;
     min-height: 2rem;
     display: flex;
     align-content: center;
-    justify-content: flex-start;
     padding-left: 1rem;
     padding-right: 0.65rem;
-    background: #4f41b8;
+    background: #808080;
     flex-wrap: wrap;
     margin-left: 0.5rem;
-    border-radius: 13px 13px 13px 0px;
+    border-radius: 13px 13px 13px 0;
     margin-bottom: 0.5rem;
     word-break: break-all;
 }
 
 .sender-msg {
-    width: 18rem;
     min-height: 2rem;
     display: flex;
     align-content: center;
@@ -43,5 +40,8 @@
     display: flex;
     justify-content: flex-start;
     margin-right: 0.5rem;
+}
+.chat-div::-webkit-scrollbar{
+    display: none;
 }
 
